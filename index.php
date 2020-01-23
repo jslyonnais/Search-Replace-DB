@@ -137,9 +137,6 @@ class icit_srdb_ui extends icit_srdb
 // prevent fatals from hiding the UI
         register_shutdown_function(array($this, 'fatal_handler'));
 
-// flag to bootstrap WP, Drupal or Joomla
-        $bootstrap = true; // isset( $_GET[ 'bootstrap' ] );
-
         $this->response();
     }
 
